@@ -4,10 +4,15 @@ import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
+import List from "./List";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <List />,
+  },
+  {
+    path: "/write",
     element: <App />,
   },
 ]);

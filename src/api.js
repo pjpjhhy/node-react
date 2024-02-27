@@ -1,8 +1,12 @@
+const API_URL= process.env.REACT_APP_API_URL
+
+
+
 export async function apiPostNoticeWrite(formData) {
   try {
     // console.log("API", formData);
     return await fetch(
-      "https://straightforward-berri-himzei.koyeb.app/notice/write",
+      `${API_URL}/notice/write`,
       {
         method: "POST",
         headers: {
